@@ -154,5 +154,4 @@ This is a supplyment of the first section. From pandas cookbook.
 > a dataframe and a series sliced from a dataframe:
 - berri_bikes = bikes[['Berri1']]  &  berri_bikes = bikes['Berri1']
 - df.index.weekday
-
-
+- pd.read_csv(path, sep=';', encoding='latin1', parse_dates=['Date'], dayfirst=True, index_col='Date')
