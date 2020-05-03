@@ -142,14 +142,17 @@ This is a supplyment of the first section. From pandas cookbook.
 ## List of functions:
 - pd.read_csv('path', sep = ':', encoding='Latins1', parse_dates=['Date'], dayfirst=True, index_col = 'Date')
 - df[column_name].plot(kind = )
-### Dealing with columns that is text represnts different item ###
 - df[column_name].value_counts()
-### a more serious slicing and dicing ###
 - df[colum_name1 == 'condition' & column_name2 == 'condition']
 
 - astype(float)
 - df.index.weekday
-- 
 
+### pandas series internally is a numpy array ###
+- pd.series([1,2,3]).values
+< array([1, 2, 3], dtype=int64)
+< a dataframe and a series sliced from a dataframe:
+- berri_bikes = bikes[['Berri1']]  &  berri_bikes = bikes['Berri1']
+- df.index.weekday
 
 
