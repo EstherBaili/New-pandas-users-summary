@@ -148,10 +148,10 @@ This is a supplyment of the first section. From pandas cookbook.
 - astype(float)
 - df.index.weekday
 
-### pandas series internally is a numpy array ###
+> pandas series internally is a numpy array ###
 - pd.series([1,2,3]).values
-< array([1, 2, 3], dtype=int64)
-< a dataframe and a series sliced from a dataframe:
+> array([1, 2, 3], dtype=int64)
+> a dataframe and a series sliced from a dataframe:
 - berri_bikes = bikes[['Berri1']]  &  berri_bikes = bikes['Berri1']
 - df.index.weekday
 
