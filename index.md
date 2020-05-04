@@ -155,3 +155,20 @@ This is a supplyment of the first section. From pandas cookbook.
 - berri_bikes = bikes[['Berri1']]  &  berri_bikes = bikes['Berri1']
 - df.index.weekday
 - pd.read_csv(path, sep=';', encoding='latin1', parse_dates=['Date'], dayfirst=True, index_col='Date')
+- pd.read_csv(URL)  url = url.template()
+- df[u"Temp (\xb0)"]
+- df.columns = [s.replace(u'\xb0', '') for s in df.columns]
+- df.dropna(axis = 1, how = 'any')
+- df.drop(['','','',''], axis=1)
+> a download function (for downloading full data e.g. whole year of data consists of months)
+```
+def download_month(year, month):
+    if month == 1;
+        year += 1
+    url = url_template.format(year=year, month=month)
+    data = pd.read_csv(url, index_col = 'Date/Time', parse_dates=True)
+    data = data.dropna(axis = 1, how = 'any')
+    data .columns = [col.replace('\xb0', '') for col in data.columns]
+    data = data.drop(['Time', 'Day', 'Month'], axis = 1)
+    return data
+```
