@@ -172,3 +172,8 @@ def download_month(year, month):
     data = data.drop(['Time', 'Day', 'Month'], axis = 1)
     return data
 ```
+- df.str.contains('snow')
+- boolean.astype(float)
+- df.resample('M').median()
+
+
