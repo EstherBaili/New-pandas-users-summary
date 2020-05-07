@@ -175,5 +175,12 @@ def download_month(year, month):
 - df.str.contains('snow')
 - boolean.astype(float)
 - df.resample('M').median()
-
+- df[column_name].unique()
+> option na_values is to set specific string as nan; dtype is to set a column as a specified data type using dictionary
+- pd.read_csv(path, na_values=[], dtype={'Incident Zip':str})
+- df[column_name].str.contains()
+> truncate a string & vectorized string function 
+- df[column_name].str.slice()
+> string method
+- df.columns.str.upper()
 
