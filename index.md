@@ -183,4 +183,5 @@ def download_month(year, month):
 - df[column_name].str.slice()
 > string method
 - df.columns.str.upper()
-
+> parsing timestamps
+- pd.to_datetime(df[column_name], unit='s')
